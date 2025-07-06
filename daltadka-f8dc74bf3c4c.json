@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "daltadka",
+  "private_key_id": "f8dc74bf3c4c308d57a30f09dee87dea98c63798",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxJd0KMF/OVoQy\n5m7ufNDaVgvthyzfKgNN44u1qWqyzC+L6rrPmiKdEZ5UqxiuizKR54L8jQNaJoFR\ngjJYjYjR7atZ2QZF7290Z/mDyl+OUg9gILn0ToOBXZ60g80aPUXBGLmOiFN1f+hT\nrPhLP+gundhnugtpvhu+XYUOlICbb9CIOJN563t9ZtGTm15muNW3hV0jZJRzzLa7\nkL42FAAZPTuUUivZ383g95MY+gWIQg+ievAOvvLxQUkS9CpW6Sl0WI7CZePt8sor\nprCfCiz4A5+b+d9Q1Ex4B8PlKw23oMqwuo6wfDVmotw3EsmJIYSS+RQyXHjuOn5w\n+rHoatrxAgMBAAECggEAAckMZ8BiDs3PakXpQ00Nu82XNC8jFCKzwtKyw0NwWFn3\ndrUIafQ3OhcF3fuVdZjgixjmuI3hRUTTE9O4lyzh/p+jFPY7enP1zxoHKT1eZixM\njF74EM7Dw4eChHY5mHSaod4SbK3SDYKbAFDjdbqwp9ueZTk6STgJxorhvupfO3HK\nPzZhVrSTJdK/sjTVdGy+r/R6SjJC5bIENGP07MhrDBws44UhcYG4JjpOH8RQ5V1D\nKD614+lxsTGg/Eug+N7ntxijLeuSCmZIvp6CkNL0Nv4d8TA4qlLClVq6JITNcd+/\nyBUDfGNKmi2W8V8/W1Ec+jkmaboWOw3yI0dhf5TjoQKBgQDg7m9ZcPiES+9HpEoN\nAfp5zhAYCBGEtLmUlfJmwGKpqGcIhBgJ8WwwDI+Ppe/Supqi1USjpNZMhgObrBUG\nTpHD5ZFAdEoJRrnN24HGYnz1RFllSA1atAXlpRLBr7M2c7jTiZ+JxueiHWdCwcVN\n3utPz/qNYqFbOcoAGJirQy756QKBgQDJnc5wdR5um+Yv1rHDoYRfIQM5mwOR/eWh\ngThI1Rl4V/Hpik8Tg53NhfAdAIgZu/Ugo2d4KdPfumCvLOIjQfICh3i2iw5/Y3aO\nRr5TuVivSuNsA6FiGaM42dAwbhOqCwy5yTIN3XUvTQjHZuNjza/80axORY6PaARI\nYkJUkIqryQKBgQDdN8NNfPz96Ey58gteRa7Zct+DMxQ/pxrJ1rtjcRzX7ScASiH2\nTXlwvDnJNpLqdto1AXkTVL/q3PbZeOHopQdZWgOEF5rlCqkcnCFDQoPRGNqu8LEp\nntoZ5ELROQMRr7h8W+MLNxOC7lYrYrWxA2f8w/iQawt01B4mAArOjTG7WQKBgElT\nTlBSGBZMNsRxRceLh5P9cqnRudOvzoMVdv3uGsxM19uDBM1pEcw8iR5TIiyR0k3j\nf+8Q71Cv/RfYsAn4oubOlFV3b3dfGjAWhIP4pcti5iFTlK8T+evkM7ZZYmd2i1NK\nXBz0zPi+AJJc1hhnJzlAnHT/ESEQyHX23n7Y7sYZAoGAcX9GRnt984aTv3oETRBu\noYBTlqVM9xPXn60kPUhxXzI1Bm3/uWzveqAMoWD/cpOSQZKIMDlvRI68fkHDZkxS\nJAMry1arZSbcN0IXzFS/4kBU/0NvAoZO8nrTfuXqsUWWN5T3fVBDIFudVWQecKRU\n1HwNN9lLLDrLz2whM42HZXw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "daltadkauploader@daltadka.iam.gserviceaccount.com",
+  "client_id": "105730801448850441824",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/daltadkauploader%40daltadka.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,9 @@
+streamlit
+insightface
+onnxruntime
+opencv-python
+numpy
+sqlite3
+google-auth
+streamlit-oauth
+cloudinary
