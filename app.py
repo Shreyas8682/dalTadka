@@ -18,7 +18,7 @@ st.set_page_config("dalTadka – Find Your Photos", layout="wide")
 os.makedirs("uploads", exist_ok=True)
 create_tables()
 face_engine = FaceEngine()
-redirect_uri = "http://localhost:8501"
+redirect_uri = "https://daltadka.streamlit.app"
 
 oauth = OAuth2Component(
     client_id=client_id,
