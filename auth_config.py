@@ -1,4 +1,4 @@
-# auth_config.py
+import streamlit as st
 
-client_id = "721602469550-6c51jnu50j2h0sdjfe830cc8jcvehrqg.apps.googleusercontent.com"
-client_secret = "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"
+client_id = st.secrets["client_id"]
+client_secret = st.secrets["client_secret"]
