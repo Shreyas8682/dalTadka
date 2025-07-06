@@ -41,12 +41,12 @@ def get_all_encodings():
     try:
         c = conn.cursor()
         c.execute('''
-            SELECT e.encoding, p.local_path
+            SELECT e.encoding, p.cloudinary_url
             FROM encodings e
             JOIN photos p ON e.photo_id = p.id
         ''')
         results = c.fetchall()
-        return [{"encoding": row[0], "local_path": row[1]} for row in results]
+        return [{"encoding": row[0], "cloudinary_url": row[1]} for row in results]
     finally:
         conn.close()
 
@@ -54,13 +54,8 @@ def delete_all_user_photos(email):
     conn = connect_db()
     try:
         c = conn.cursor()
-        c.execute("SELECT id, local_path FROM photos WHERE photographer_email = ?", (email,))
+        c.execute("SELECT id FROM photos WHERE photographer_email = ?", (email,))
         photos = c.fetchall()
-
-        # Delete local image files
-        for _, path in photos:
-            if os.path.exists(path):
-                os.remove(path)
 
         photo_ids = [row[0] for row in photos]
         c.executemany("DELETE FROM encodings WHERE photo_id = ?", [(pid,) for pid in photo_ids])
@@ -74,13 +69,9 @@ def delete_all_photos():
     conn = connect_db()
     try:
         c = conn.cursor()
-        c.execute("SELECT local_path FROM photos")
-        paths = [row[0] for row in c.fetchall()]
+        # Local path column no longer exists; skip file deletion
+        pass
 
-        # Delete files from disk
-        for path in paths:
-            if os.path.exists(path):
-                os.remove(path)
 
         c.execute("DELETE FROM encodings")
         c.execute("DELETE FROM photos")

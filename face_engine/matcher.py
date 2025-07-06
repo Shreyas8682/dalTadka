@@ -11,7 +11,7 @@ def cosine_similarity(vec1, vec2):
         return 0.0
     return dot / (norm1 * norm2)
 
-def find_matches(selfie_embedding, threshold=0.6):
+def find_matches(selfie_embedding, threshold=0.5):
     results = []
     data = get_all_encodings()
 
@@ -22,11 +22,10 @@ def find_matches(selfie_embedding, threshold=0.6):
 
             if similarity > threshold:
                 results.append({
-                    "path": row["local_path"],   # ✅ Use local file path
+                    "url": row["cloudinary_url"],  # ✅ Use Cloudinary URL now
                     "score": round(similarity, 3)
                 })
-        except Exception as e:
-            # Skip bad encodings if any
+        except Exception:
             continue
 
     results.sort(key=lambda x: x["score"], reverse=True)

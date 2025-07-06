@@ -18,7 +18,11 @@ st.set_page_config("dalTadka – Find Your Photos", layout="wide")
 os.makedirs("uploads", exist_ok=True)
 create_tables()
 face_engine = FaceEngine()
+<<<<<<< HEAD
 redirect_uri = "https://daltadka.streamlit.app"
+=======
+redirect_uri = "http://localhost:8501/"
+>>>>>>> abc3c403 (✨ Improved face match to support partial, side, and blurry detections using Cloudinary URLs)
 
 oauth = OAuth2Component(
     client_id=client_id,
@@ -99,7 +103,7 @@ elif menu == "Find Me":
                 st.stop()
 
             query_embedding = embeddings[0]
-            matched_results = find_matches(query_embedding, threshold=0.6)
+            matched_results = find_matches(query_embedding, threshold=0.5)
 
             if not matched_results:
                 st.info("😕 No matching photos found.")
@@ -109,7 +113,7 @@ elif menu == "Find Me":
                 cols = st.columns(4)
                 for i, match in enumerate(matched_results):
                     with cols[i % 4]:
-                        st.image(match["path"], caption=f"Score: {match['score']}", use_container_width=True)
+                        st.image(match["url"], caption=f"Score: {match['score']}", use_container_width=True)
 
 # ---------- PHOTOGRAPHER UPLOAD ----------
 elif menu == "Photographer Upload":
@@ -146,9 +150,10 @@ elif menu == "Photographer Upload":
                     # 3. Insert metadata into DB
                     timestamp = datetime.now().isoformat()
                     c.execute(
-                        "INSERT INTO photos (image_id, local_path, cloudinary_url, photographer_email, timestamp) VALUES (?, ?, ?, ?, ?)",
-                        (photo_id, filepath, cloud_url, email, timestamp)
-                    )
+                             "INSERT INTO photos (image_id, cloudinary_url, photographer_email, timestamp) VALUES (?, ?, ?, ?)",
+                              (photo_id, cloud_url, email, timestamp)
+)
+
                     photo_db_id = c.lastrowid
 
                     # 4. Get embeddings and insert
