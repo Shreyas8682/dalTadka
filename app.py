@@ -14,15 +14,12 @@ from face_engine.matcher import find_matches
 
 
 # Setup
+# Setup
 st.set_page_config("dalTadka – Find Your Photos", layout="wide")
 os.makedirs("uploads", exist_ok=True)
 create_tables()
 face_engine = FaceEngine()
-<<<<<<< HEAD
-redirect_uri = "https://daltadka.streamlit.app"
-=======
-redirect_uri = "http://localhost:8501/"
->>>>>>> abc3c403 (✨ Improved face match to support partial, side, and blurry detections using Cloudinary URLs)
+redirect_uri = "https://daltadka.streamlit.app"  # ✅ Use this for deployed version
 
 oauth = OAuth2Component(
     client_id=client_id,
