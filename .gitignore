@@ -1,11 +1,17 @@
+# Python
 __pycache__/
-*.pyc
-*.db
-*.pkl
-.DS_Store
-.env
-uploads/
-venv*/
-*.log
-# Ignore Streamlit secrets
+*.py[cod]
+
+# Virtualenv
+venv/
+venv310/
+
+# VS Code
+.vscode/
+
+# SQLite-WAL/SHM files (optional)
+dalTadka.db-wal
+dalTadka.db-shm
+
+# Streamlit secrets
 .streamlit/secrets.toml
