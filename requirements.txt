@@ -11,3 +11,5 @@ pydantic==2.11.7
 python-dotenv==1.0.1
 easydict==1.13
 scikit-learn==1.7.0
+pip install onnxruntime
+
